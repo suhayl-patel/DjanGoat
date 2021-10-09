@@ -1,0 +1,13 @@
+- name: Licence Check
+  # You may pin to the exact commit or the version.
+  # uses: tortellini-tools/action@683836c1762a9e3c5ef5493548dfb15d5a5dec6d
+  uses: tortellini-tools/action@v3
+  with:
+    # A file containing list of GitHub repository urls
+    repositories: # optional, default is 
+    # A file or URL containing curations correct invalid or missing package metadata and set the concluded license for packages. See https://github.com/oss-review-toolkit/ort/blob/master/docs/config-file-curations-yml.md
+    curations: # optional, default is 
+    # A file or URL containing ort rules to detect license violations. See https://github.com/oss-review-toolkit/ort/blob/master/docs/file-rules-kts.md
+    rules: # default is https://github.com/NLeSC/tortellini-on-rsd/raw/main/config/rules.kts
+    # A file or URL containing classes for each license. See https://github.com/oss-review-toolkit/ort/blob/master/docs/config-file-license-classifications-yml.md
+    classifications: # default is https://github.com/NLeSC/tortellini-on-rsd/raw/main/config/license-classifications.yml
